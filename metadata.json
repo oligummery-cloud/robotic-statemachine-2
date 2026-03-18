@@ -1,0 +1,5 @@
+{
+  "name": "RoboState Designer",
+  "description": "A minimal state machine designer and visualizer for robotics, built with React Flow.",
+  "requestFramePermissions": []
+}
