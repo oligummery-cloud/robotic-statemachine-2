@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "reactflow/dist/style.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --bg-color: #f9fafb;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.react-flow__node {
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 0;
+}
+
+.react-flow__node.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #9ca3af;
+}
+
+.react-flow__edge-path {
+  stroke: #9ca3af;
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3b82f6;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
